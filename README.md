@@ -15,4 +15,5 @@ Edusity is a modern and responsive education website designed to provide informa
 - **CSS3**: Styling and layout  
 - **React.js**: Front-end UI components  
 
-![Edusity](https://github.com/user-attachments/assets/7320fe22-a2b4-40a5-8595-7f04056b67f7)
+![image](https://github.com/user-attachments/assets/2995917f-8b3f-4794-bd55-20839aaff145)
+
