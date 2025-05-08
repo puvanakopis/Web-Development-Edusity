@@ -1,0 +1,93 @@
+/* Main navbar */
+nav {
+    width: 80% !important;
+    padding: 1% 10% !important;
+    height: fit-content;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+}
+
+/* Logo */
+nav .logo {
+    width: 180px;
+}
+
+/* Navigation list */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Dark navbar when scrolling */
+.dark-nav {
+    background-color: #212ea2;
+    transition: 0.5s;
+}
+
+/* hiding menu-icon */
+.menu-icon{
+    display: none;
+}
+
+
+
+/* media query for max width 1000px */
+@media (max-width: 1000px) {
+    .logo {
+        width: 140px;
+    }
+
+    .menu-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        cursor: pointer;
+    }
+
+    nav {
+        padding: 15px 0;
+    }
+
+    nav ul {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        margin: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #212ea2;
+        z-index: -1;
+        width: 200px;
+        /* padding-top: 80px; */
+        transition: all 0.5s;
+    }
+
+    nav ul li{
+        margin: 15px 40px;
+        text-align: start;
+    }
+
+    .hide-mobile-menu{
+        right: -200px;
+    }
+}

@@ -1,0 +1,102 @@
+/*programs container */
+.programs{
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Individual program card */
+.program img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.program{
+    flex-basis: 30%;
+    position: relative;
+}
+
+.program img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Caption */
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    color: white;
+    opacity: 0;
+    padding-top: 70%;
+    transition: all 0.5s;
+}
+
+.program:hover .caption{
+    opacity: 1;
+    padding-top: 0%;
+}
+
+.caption{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 15, 152, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+    color: white;
+    opacity: 0;
+}
+
+.caption img{
+    width: 60px !important;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/* media query for max width 1000px */
+@media (max-width: 1000px) {
+   
+}
+
+
+
+/* media query for max width 850px */
+@media (max-width: 850px) {
+  
+}
+
+
+
+/* media query for max width 850px */
+@media (max-width: 650px) {
+    .programs{
+        flex-direction: column;
+    }
+
+    .program{
+        flex-basis: 100%;
+        margin: 20px;
+    }
+}

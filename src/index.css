@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif+Tamil:ital,wght@0,100..900;1,100..900&family=Poltawski+Nowy:ital,wght@0,400..700;1,400..700&family=Praise&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poltawski Nowy", serif;
+}
+
+body{
+  background-color: #f5f5f5;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* Container for all component */
+.container{
+  width: 100%;
+  padding: 0 10%
+}
+
+
+/*All Button style */
+.btn{
+  background-color: #fff;
+  color: #212121;
+  padding: 10px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*All Button style which is after home component*/
+.btn.dark-btn{
+  background-color: #212ea2 !important;
+  color: #fff;
+}
+
+
+
+
+/* media query */
+@media (max-width: 1000px) {
+  .btn{
+    padding: 14px 22px;
+  }
+}

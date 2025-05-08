@@ -1,0 +1,144 @@
+/*testimonials container */
+.testimonials{
+    width: 80%;
+    margin: 80px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+/* Styling next and back buttons */
+.next-btn, .back-btn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(50%);
+    padding: 15px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #212EA0;
+    cursor: pointer;
+}
+
+.back-btn{
+    right: auto;
+    left: 0;
+}
+
+
+/* Container for slides */
+.slider{
+    overflow: hidden;
+    width: 80%;
+    margin:auto;
+}
+
+.slider ul{
+    display: flex;
+    width: 200%;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.slider ul li{
+    list-style: none;
+    width: 50%;
+    padding: 20px;
+}
+
+
+/* Styling for each card */
+.slide{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 10px;
+    color: #676767;
+    line-height: 1.4;
+}
+
+.slide img{
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background-color: #212EA0;
+    padding: 5px;
+}
+
+.slide .user-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.slide .user-info h3{
+    color: #212EA0;
+}
+
+
+
+/* media query for max width 1000px */
+@media (max-width: 1000px) {
+   
+}
+
+
+
+/* media query for max width 850px */
+@media (max-width: 800px) {
+  .testimonials{
+    padding: 0 40px;
+  }
+
+  .next-btn , .back-btn{
+    padding: 10px;
+    width: 35px !important;
+  }
+
+  .testimonials ul li{
+    padding: 10px;
+  }
+
+  .slide{
+    padding: 10px;
+  }
+
+  .slide img{
+    width: 50px;
+    padding: 3px;
+  }
+}
+
+
+
+/* media query for max width 650px */
+@media (max-width: 650px) {
+    .next-btn , .back-btn{
+        padding: 10px;
+        width: 20px !important;
+    }
+    
+    .slide{
+        padding: 8px;
+      }
+    
+    .slide img{
+        width: 40px;
+        padding: 2px;
+    }
+
+    .user-info{
+        display: block !important;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    .user-info h3{
+        font-size: 16px;
+    }
+
+    .slide p{
+        font-size: 12px;
+    }
+}
